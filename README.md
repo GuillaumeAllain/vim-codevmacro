@@ -2,7 +2,7 @@
 
 A vim syntax for CodeV's Macro-Plus language.
 
-For the moment, it is mostly a transcriptions of @heterophyllus syntax for Atom : [language-codev](https://github.com/heterophyllus/language-codev)
+For the moment, it is mostly a transcriptions of [heterophyllus](https://github.com/heterophyllus) syntax for Atom : [language-codev](https://github.com/heterophyllus/language-codev)
 
 # Installation
 
