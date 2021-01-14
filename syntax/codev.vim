@@ -87,7 +87,7 @@ syn keyword codevBuiltIn ImageSaveAs ImageSubtract ImageToArray ImageWrite
 
 syn keyword codevBuiltIn ARR_TO_BUF AS_BUILT_ABC AS_BUILT_VAR ASINF ATANF 
 syn keyword codevBuiltIn BUF_TO_ARR CONCAT COSF EXPF FFT1DCA FFT1DCB FFT2DCA 
-syn keyword codevBuiltIn FFT2DCB FITERROR GAUSSBEAM GAUSSWTS sqrt
+syn keyword codevBuiltIn FFT2DCB FITERROR GAUSSBEAM GAUSSWTS SQRT ACOSF
 syn keyword codevBuiltIn GET_COMPLEX_MAGNITUDE GET_IMAGINARY_PART GET_REAL_PART 
 syn keyword codevBuiltIn GetDim1num GetDim2num INDEX INPARALLEL INT_DEPART ISFCT 
 syn keyword codevBuiltIn ISGBL ISLCL LENSTR LOCSTR LOG10F LOGF LOWCASE MAXF MINF 
