@@ -1,742 +1,583 @@
-snippet ABSF
+snippet ABSF Absolute Value
 
 	ABSF(${1:expr})
-# "description": "Absolute Value"
 
-snippet ACOSF
+snippet ACOSF Arccosine
 
 	ACOSF(${1:expr})
-# "description": "Arccosine"
 
-snippet ASINF
+snippet ASINF Arcsine
 
 	ASINF(${1:expr})
-# "description": "Arcsine"
 
-snippet ATANF
+snippet ATANF Arctangent
 
 	ATANF(${1:expr})
-# "description": "Arctangent"
 
-snippet COSF
+snippet COSF Cosine
 
 	COSF(${1:expr})
-# "description": "Cosine"
 
-snippet EXPF 
+snippet EXPF Exponential
 
 	EXPF(${1:expr})
-# "description": "Exponential"
 
-snippet LOGF
+snippet LOGF Natural Logarithm
 
 	LOGF(${1:expr})
-# "description": "Natural Logarithm"
 
-snippet LOG10F
+snippet LOG10F Common Logarithm
 
 	LOG10F(${1:expr})
-# "description": "Common Logarithm"
 
-snippet MAXF
+snippet MAXF "desription": "Maximum of exp1 and exp2"
 
 	MAXF(${1:expr1},${2:expr2})
-"desription": "Maximum of exp1 and exp2"
 
-snippet MINF
+snippet MINF Minimum of exp1 and exp2
 
 	MINF(${1:expr1},${2:expr2})
-# "description": "Minimum of exp1 and exp2"
 
-snippet MODF
+snippet MODF Remainder of ${1:expr1} by ${2:expr2}
 
 	MODF(${1:expr1},${2:expr2})
-# "description": "Remainder of ${1:expr1} by ${2:expr2}"
 
-snippet RANDF
+snippet RANDF Return random value [0..1)
 
 	RANDF
-# "description": "Return random value [0..1)"
 
-snippet ROUNDF
+snippet ROUNDF Round to integer
 
 	ROUNDF(${1:expr1})
-# "description": "Round to integer"
 
-snippet SIGNF
+snippet SIGNF absf(expr1)*sign(expr2)
 
 	SIGNF(${1:expr1},${2:expr2})
-# "description":"absf(expr1)*sign(expr2)"
 
-snippet SINF
+snippet SINF Sine
 
 	SINF(${1:expr1})
-# "description":"Sine"
 
-snippet SQRTF
+snippet SQRTF Square root
 
 	SQRTF(${1:expr1})
-# "description":"Square root"
 
-snippet TANF
+snippet TANF Tangent
 
 	TANF(${1:expr1})
-# "description":"Tangent"
 
-snippet ZFRFIT
+snippet ZFRFIT Fitting to Fringe Zernike polynomial
 
 	ZFRFIT(${1:num_points},${2:x},${3:y},${4:num_terms},${5:coefs})
-# "description":"Fitting to Fringe Zernike polynomial"
 
-snippet ZRNFIT
+snippet ZRNFIT Fitting to Normal Zernike polynomial
 
 	ZRNFIT(${1:num_points},${2:x},${3:y},${4:num_terms},${5:coefs})
-# "description":"Fitting to Normal Zernike polynomial"
 
-snippet GAUSSWTS
+snippet GAUSSWTS Compute coordinates and weights for Gaussian quadrature
 
 	GAUSSWTS(${1:num_input_pts},${2:input_coords},${3:input_wts},${4:num_quad_pts},${5:quad_coords},${6:quad_wts})
-# "description":"Compute coordinates and weights for Gaussian quadrature"
 
-
-
-snippet ABCD
+snippet ABCD ABCD matrix
 
 	ABCD(${1:zoom},${2:wave},${3:field},${4:surface_start}, ${5:surface_end}, ${6:start_ray_config_arr}, ${7:final_ray_config_arr}, ${8:output_arr})
 
-# "description": "ABCD matrix"
 
-snippet AS_BUILT_ABC
+snippet AS_BUILT_ABC Tolerance sensitivity analysis using current set of tolerance and compensator
 
 	AS_BUILT_ABC(${1:zoom},${2:field},${3:NRD},${4:output_type},${5:cross_terms},${6:linear_terms})
-# "description": "Tolerance sensitivity analysis using current set of tolerance and compensator"
 
-snippet AS_BUILT_VAR
+snippet AS_BUILT_VAR Return TOR output using current set of tolerance and compensator
 
 	AS_BUILT_VAR(${1:zoom},${2:field},${3:NRD},${4:output_type})
-# "description": "Return TOR output using current set of tolerance and compensator"
 
-snippet BESTSPH
+snippet BESTSPH Bestfit spherical radius
 
 	BESTSPH(${1:surface},${2:zoom},${3:min_height},${4:max_height})
-# "description":"Bestfit spherical radius"
 
-snippet CNVTFIELD
+snippet CNVTFIELD Convert field type
 
 	CNVTFIELD(${1:field_type})
-# "description":"Convert field type"
 
-snippet EVALZERN
+snippet EVALZERN Evaluate Zernike polynomials and compute the value at (x,y)
 
 	EVALZERN(${1:wave},${2:field},${3:zoom},${4:x},${5:y},${6:pol_type},${7:output_string},${8:zernike_type})
-# "description":"Evaluate Zernike polynomials and compute the value at (x,y)"
 
-snippet FITERROR
+snippet FITERROR Evaluate Zernike polynomials and compute the RMS error
 
 	FITERROR(${1:wave},${2:field},${3:zoom},${4:pol_type},${5:output_string},${6:zernike_type})
-# "description":"Evaluate Zernike polynomials and compute the RMS error"
 
-snippet GAUSSBEAM
+snippet GAUSSBEAM Trace a slow Gaussianbeam through an optical system and calculate at the specified surface the beamradius, beam orientation, wavefront radiusof curvature, waist position and waist radius
 
 	GAUSSBEAM(${1:surface},${2:zoom},${3:field},${4:wave},${5:input_arr},${6:output_string})
-# "description":"Trace a slow Gaussianbeam through an optical system and calculate at the specified surface the beamradius, beam orientation, wavefront radiusof curvature, waist position and waist radius"
 
-snippet INDEX
+snippet INDEX Refractive index at (x,y,x) of gradientindex material
 
 	INDEX(${1:surface},${2:zoom},${3:field},${4:wave},${5:glass},${6:x},${7:y},${8:z})
-# "description":"Refractive index at (x,y,x) of gradientindex material"
 
-snippet INT_DEPART
+snippet INT_DEPART Verifies Finite Element Analysis (FEA) software is creating correct .INT files
 
 	INT_DEPART(${1:surface},${2:zoom},${3:x},${4:y},${5:nor|sag})
-# "description":"Verifies Finite Element Analysis (FEA) software is creating correct .INT files"
 
-snippet MTF_1FLD
+snippet MTF_1FLD Compute MTF
 
 	MTF_1FLD(${1:zoom},${2:field},${3:frequency},${4:azimuth},${5:NRD},${6:output_arr},${7:dif|geo},${8:sin|sqw})
-# "description":"Compute MTF"
 
-snippet NORMRADIUS
+snippet NORMRADIUS Normalized radius generated with ZERNIKE, ZFRCOEF
 
 	NORMRADIUS(${1:wave},${2:field},${3:zoom},${4:pol_type},${5:output_string},${6:zernike_type})
-# "description":"Normalized radius generated with ZERNIKE, ZFRCOEF"
 
-snippet POLGRID
+snippet POLGRID Trace grid of rays and return the polarization property at the image surface
 
 	POLGRID(${1:zoom},${2:wave},${3:field},${4:aper_check},${5:num_rays},${6:input_arr},${7:output_arr})
-# "description":"Trace grid of rays and return the polarization property at the image surface"
 
-snippet PSF_1FLD
+snippet PSF_1FLD Compute point spread function
 
 	PSF_1FLD(${1:zoom},${2:field},${3:wave},${4:TGR}, ${5:PGR},${6:NRD},${7:GRI},${8:PRO},${9:XSC},${10:PHA},${11:norm},${12:THR},${13:output_array})
-# "description":"Compute point spread function"
 
-snippet PSF_DATA_1FLD
+snippet PSF_DATA_1FLD Compute point spread function with intensity of each pixel
 
 	PSF_DATA_1FLD(${1:zoom},${2:field},${3:wave},${4:TGR}, ${5:PGR},${6:NRD},${7:GRI},${8:PRO},${9:XSC},${10:PHA},${11:norm},${12:THR},${13:output_array},${14:data_array})
-# "description":"Compute point spread function with intensity of each pixel"
 
-snippet RAYPOL
+snippet RAYPOL Perform faster ray tracing with more outputs than RAYTRA
 
 	RAYPOL(${1:zoom},${2:wave},${3:field},${4:aper_check},${5:num_rays},${6:input_arr},${7:output_arr})
-# "description":"Perform faster ray tracing with more outputs than RAYTRA"
 
-snippet RAYRSI
+snippet RAYRSI Perform RSI ray tracing
 
 	RAYRSI(${1:zoom},${2:wave},${3:field},${4:ref_surf},${5:input_arr})
-# "description":"Perform RSI ray tracing"
 
-snippet RAYSIN
+snippet RAYSIN Perform SIN ray tracing
 
 	RAYSIN(${1:zoom},${2:wave},${3:x_tan},${4:y_tan},${5:x_dir_tan},${6:y_dir_tan})
-# "description":"Perform SIN ray tracing"
 
-snippet RAYTRA
+snippet RAYTRA Perform SIN ray tracing towards the image surface
 
 	RAYTRA(${1:zoom},${2:wave},${3:aper_check},${4:input_arr},${5:output_arr})
-# "description":"Perform SIN ray tracing towards the image surface"
 
-snippet RMSSPOT
+snippet RMSSPOT Compute RMS spot size
 
 	RMSSPOT(${1:zoom},${2:field},${3:defocus},${4:RTL|NRD})
-# "description":"Compute RMS spot size"
 
-snippet RMSWE
+snippet RMSWE Compute RMS wavefront error at all fields
 
 	RMSWE(${1:zoom},${2:wave},${3:NRD},${4:output_arr},${5:focus})
-# "description":"Compute RMS wavefront error at all fields"
 
-snippet RMS_1FLD
+snippet RMS_1FLD Compute RMS wavefront error
 
 	RMS_1FLD(${1:zoom},${2:field},${3:wave},${4:NRD},${5:output_arr}.${6:focus})
-# "description":"Compute RMS wavefront error"
 
-snippet SAGF
+snippet SAGF Sag of the surface at (x,y)
 
 	SAGF(${1:surface},${2:zoom},${3:x_coord},${4:y_coord})
-# "description":"Sag of the surface at (x,y)"
 
-snippet SASF
+snippet SASF Compute surface astigmatism
 
 	SASF(${1:surface},${2:zoom},${3:x},${4:y},${5:output_arr})
-# "description":"Compute surface astigmatism"
 
-snippet SDERIVF
+snippet SDERIVF Compute sag, 1st and 2nd derivatives
 
 	SDERIVF(${1:surface},${2:zoom},${3:x_coord},${4:y_coord},${5:output_arr})
-# "description":"Compute sag, 1st and 2nd derivatives"
 
-snippet SPOTDATA
+snippet SPOTDATA Compute spot size
 
 	SPOTDATA(${1:zoom},${2:field},${3:defocus},${4:RTL|NRD},${5:reference},${6:x_shift},${7:y_shift},${8:output_arr})
-# "description":"Compute spot size"
 
-snippet SURFSAGD
+snippet SURFSAGD Compute variance of the sag difference from the input curvature for specified points
 
 	SURFSAGD(${1:surface},${2:zoom},${3:curvature},${4:x_array_input},${5:y_array_input},${6:output_array})
-# "description":"Compute variance of the sag difference from the input curvature for specified points"
 
-snippet TRA_1FLD
+snippet TRA_1FLD Compute the transmission and projected solid angle at the object using TRA
 
 	TRA_1FLD(${1:zoom},${2:x_fld},${3:y_fld},${4:NRD},${5:geo_or_stoke},${6:grid_scale_fact},${7:pol_input},${8:output_array})
-# "description":"Compute the transmission and projected solid angle at the object using TRA"
 
-snippet TRANSFORM
+snippet TRANSFORM Transform local coordinate from a surface to another
 
 	TRANSFORM(${1:surface},${2:ref_surface},${3:zoom},${4:trans_data})
-# "description":"Transform local coordinate from a surface to another"
 
-snippet ZERNIKE
+snippet ZERNIKE Compute Zernike fit coefficients
 
 	ZERNIKE(${1:wave},${2:field},${3:zoom},${4:coef},${5:num_rays_across_dia},${6:num_terms},${7:pupil_type},${8:pol_type},${9:int_or_phase},${10:zernike_type})
-# "description":"Compute Zernike fit coefficients"
 
 snippet ZERNIKEGQ
 
 	ZERNIKEGQ(${1:wave},${2:field},${3:zoom},${4:coef},${5:num_terms},${6:pupil_type},${7:pol_type},${8:int_or_phase},${9:zernike_type})
-# "description":"Compute Zernike fit coefficients using radial grid based on Gaussian quadrature"
+Compute Zernike fit coefficients using radial grid based on Gaussian quadrature
 
-snippet ZFRCOEF
+snippet ZFRCOEF Compute Fringe Zernike fit coefficients
 
 	ZFRCOEF(${1:wave},${2:field},${3:zoom},${4:coef},${5:num_rays_across_dia},${6:num_terms},${7:pupil_coord_type})
-# "description":"Compute Fringe Zernike fit coefficients"
 
-
-
-snippet ImageAdd
+snippet ImageAdd Add imageA and imageB
 
 	ImageAdd(${1:imageA},${2:imageB},${3:output_image})
-# "description":"Add imageA and imageB"
 
-snippet ImageAddConstantTo
+snippet ImageAddConstantTo Add constant value to the image, overwrite the original image
 
 	ImageAddConstantTo(${1:imageA},${2:constVal})
-# "description":"Add constant value to the image, overwrite the original image"
 
-snippet ImageChangeGamma
+snippet ImageChangeGamma Gamma correction
 
 	ImageChangeGamma(${1:image},${2:gammaValue})
-# "description":"Gamma correction"
 
-snippet ImageClip
+snippet ImageClip Image clipping
 
 	ImageClip(${1:image},${2:maxValue},${3:minValue},${4:component})
-# "description":"Image clipping"
 
-snippet ImageCombineComponents
+snippet ImageCombineComponents Combine 3 image to a single one
 
 	ImageCombineComponents(${1:redImage},${2:greenImage},${3:blueImage},${4:colorImage})
-# "description":"Combine 3 image to a single one"
 
-snippet ImageCopy
+snippet ImageCopy Copy image
 
 	ImageCopy(${1:inputImage},${2:outputImage})
-# "description":"Copy image"
 
-snippet ImageDelete
+snippet ImageDelete Delete image
 
 	ImageDelete(${1:image})
-# "description":"Delete image"
 
-snippet ImageDisplay
+snippet ImageDisplay Display image on the new window
 
 	ImageDisplay(${1:image},${2:scaling})
-# "description":"Display image on the new window"
 
-snippet ImageExtractComponent
+snippet ImageExtractComponent Extract monochrome image from RGB image
 
 	ImageExtractComponent(${1:RGBImage},${2:monochromeImage},${3:channel})
-# "description":"Extract monochrome image from RGB image"
 
-snippet ImageFlipX
+snippet ImageFlipX Flip image (X direction)
 
 	ImageFlipX(image)
-# "description":"Flip image (X direction)"
 
-snippet ImageFlipY
+snippet ImageFlipY Flip image (Y direction)
 
 	ImageFlipY(image)
-# "description":"Flip image (Y direction)"
 
-snippet ImageFromArray
+snippet ImageFromArray Write data from 2D array to image
 
 	ImageFromArray(${1:inputArray},${2:monochromeImage})
-# "description":"Write data from 2D array to image"
 
-snippet ImageGetAverageValueColor
+snippet ImageGetAverageValueColor Get the average value of the pixels in each channel of a color image
 
 	ImageGetAverageValueColor(${1:image},${2:aveArray})
-# "description":"Get the average value of the pixels in each channel of a color image"
 
-snippet ImageGetAverageValueMonochrome
+snippet ImageGetAverageValueMonochrome Get the average value of the pixels in each channel of a monochrome image
 
 	ImageGetAverageValueMonochrome(${1:image},${2:aveArray})
-# "description":"Get the average value of the pixels in each channel of a monochrome image"
 
-snippet ImageGetMaxValueColor
+snippet ImageGetMaxValueColor Get the maximum value of the pixels in each channel of a color image
 
 	ImageGetMaxValueColor(${1:image},${2:maxArray})
-# "description":"Get the maximum value of the pixels in each channel of a color image"
 
-snippet ImageGetMaxValueMonochrome
+snippet ImageGetMaxValueMonochrome Get the maximum value of the pixels in each channel of a monochrome image
 
 	ImageGetMaxValueMonochrome(${1:image},${2:maxArray})
-# "description":"Get the maximum value of the pixels in each channel of a monochrome image"
 
-snippet ImageGetMinValueColor
+snippet ImageGetMinValueColor Get the minimum value of the pixels in each channel of a color image
 
 	ImageGetMinValueColor(${1:image},${2:minArray})
-# "description":"Get the minimum value of the pixels in each channel of a color image"
 
-snippet ImageGetMinValueMonochrome
+snippet ImageGetMinValueMonochrome Get the minimum value of the pixels in each channel of a monochrome image
 
 	ImageGetMinValueMonochrome(${1:image},${2:minArray})
-# "description":"Get the minimum value of the pixels in each channel of a monochrome image"
 
-snippet ImageGetSumOfValuesColor
+snippet ImageGetSumOfValuesColor Get the sum of the value of the pixels in each channel of a color image
 
 	ImageGetSumOfValuesColor(${1:image},${2:sumArray(3)})
-# "description":"Get the sum of the value of the pixels in each channel of a color image"
 
-snippet ImageGetSumOfValuesMonochrome
+snippet ImageGetSumOfValuesMonochrome Get the sum of the value of the pixels in each channel of a monochrome image
 
 	ImageGetSumOfValuesMonochrome(${1:image},${2:sumArray(3)})
-# "description":"Get the sum of the value of the pixels in each channel of a monochrome image"
 
-snippet ImageMDCopy
+snippet ImageMDCopy Copy all meta data
 
 	ImageMDCopy(${1:fromImage},${2:toImage})
-# "description":"Copy all meta data"
 
-snippet ImageMDCopyWavelengthsAndWeights
+snippet ImageMDCopyWavelengthsAndWeights Copy wavelengths and weights
 
 	ImageMDCopyWavelengthsAndWeights(${1:sourceImage},${2:destinationImage})
-# "description":"Copy wavelengths and weights"
 
-snippet ImageMDGetCME
+snippet ImageMDGetCME Get CME
 
 	ImageMDGetCME(${1:image})
-# "description":"Get CME"
 
-snippet ImageMDGetDescriptor
+snippet ImageMDGetDescriptor Get string that was assigned with ImageMDSetDescriptor
 
 	ImageMDGetDescriptor(${1:image})
-# "description":"Get string that was assigned with ImageMDSetDescriptor"
 
-snippet ImageMDGetDEX
+snippet ImageMDGetDEX Get DEX
 
 	ImageMDGetDEX(${1:image})
-# "description":"Get DEX"
 
-snippet ImageMDGetDEY
+snippet ImageMDGetDEY Get DEY
 
 	ImageMDGetDEY(${1:image})
-# "description":"Get DEY"
 
-snippet ImageMDGetFieldOffsetX
+snippet ImageMDGetFieldOffsetX Get X offset of the center of the object within the field of view of the lens
 
 	ImageMDGetFieldOffsetX(${1:image})
-# "description":"Get X offset of the center of the object within the field of view of the lens"
 
-snippet ImageMDGetFieldOffsetY
+snippet ImageMDGetFieldOffsetY Get Y offset of the center of the object within the field of view of the lens
 
 	ImageMDGetFieldOffsetY(${1:image})
-# "description":"Get Y offset of the center of the object within the field of view of the lens"
 
-snippet ImageMDGetFieldRotation
+snippet ImageMDGetFieldRotation Get field rotation
 
 	ImageMDGetFieldRotation(${1:image})
-# "description":"Get field rotation"
 
-snippet ImageMDGetFieldUnits
+snippet ImageMDGetFieldUnits Get field units
 
 	ImageMDGetFieldUnits(${1:image})
-# "description":"Get field units"
 
-snippet ImageMDGetGamma
+snippet ImageMDGetGamma Get gamma value
 
 	ImageMDGetGamma(${1:image})
-# "description":"Get gamma value"
 
-snippet ImageMDGetGRI
+snippet ImageMDGetGRI Get GRI value
 
 	ImageMDGetGRI(${1:image})
-# "description":"Get GRI value"
 
-snippet ImageMDGetImagePixelSize
+snippet ImageMDGetImagePixelSize Get pixel size
 
 	ImageMDGetImagePixelSize(${1:image})
-# "description":"Get pixel size"
 
-snippet ImageMDGetImageSemiDiagonal
+snippet ImageMDGetImageSemiDiagonal Get the image semi-diagonal measurement
 
 	ImageMDGetImageSemiDiagonal(${1:image})
-# "description":"Get the image semi-diagonal measurement"
 
-snippet ImageMDGetLensName
+snippet ImageMDGetLensName Get the lens name
 
 	ImageMDGetLensName(${1:image})
-# "description":"Get the lens name"
 
-snippet ImageMDGetNRD
+snippet ImageMDGetNRD Get NRD
 
 	ImageMDGetNRD(${1:image})
-# "description":"Get NRD"
 
-snippet ImageMDGetNumXPixels
+snippet ImageMDGetNumXPixels Get number of pixels along x direction
 
 	ImageMDGetNumXPixels(${1:image})
-# "description":"Get number of pixels along x direction"
 
-snippet ImageMDGetNumYPixels
+snippet ImageMDGetNumYPixels Get number of pixels along y direction
 
 	ImageMDGetNumYPixels(${1:image})
-# "description":"Get number of pixels along y direction"
 
-snippet ImageMDGetNumWavelengths
+snippet ImageMDGetNumWavelengths Get number of wavelength of each channel of color image, or luminesence of monochrome image
 
 	ImageMDGetNumWavelengths
-# "description":"Get number of wavelength of each channel of color image, or luminesence of monochrome image"
 
-snippet ImageMDGetObjectFileName
+snippet ImageMDGetObjectFileName Get file name of the objet image
 
 	ImageMDGetObjectFileName(${1:image})
-# "description":"Get file name of the objet image"
 
-snippet ImageMDGetObjectSemiDiagonal
+snippet ImageMDGetObjectSemiDiagonal Get semidiagonal of the objet image
 
 	ImageMDGetObjectSemiDiagonal(${1:image})
-# "description":"Get semidiagonal of the objet image"
 
-snippet ImageMDGetOffsetValue
+snippet ImageMDGetOffsetValue Get offset value of subsequent IMS result
 
 	ImageMDGetOffsetValue(${1:image})
-# "description":"Get offset value of subsequent IMS result"
 
-snippet ImageMDGetPMX
+snippet ImageMDGetPMX Get PMX
 
 	ImageMDGetPMX(${1:image})
-# "description":"Get PMX"
 
-snippet ImageMDGetPMY
+snippet ImageMDGetPMY Get PMY
 
 	ImageMDGetPMY(${1:image})
-# "description":"Get PMY"
 
-snippet ImageMDSetSimulationDate
+snippet ImageMDSetSimulationDate Get the date when IMS was executed
 
 	ImageMDSetSimulationDate(${1:image},${2:dateString})
-# "description":"Get the date when IMS was executed"
 
-snippet ImageMDSetSym
+snippet ImageMDSetSym Set symmetry, rotational(ROT) or non-rotational(NON)
 
 	ImageMDSetSym(${1:image},${2:symString})
-# "description":"Set symmetry, rotational(ROT) or non-rotational(NON)"
 
-snippet ImageMDSetTGR
+snippet ImageMDSetTGR Set TGR value
 
 	ImageMDSetTGR(${1:image},${2:tgrValue})
-# "description":"Set TGR value"
 
-snippet ImageMDSetTitle
+snippet ImageMDSetTitle Set image title
 
 	ImageMDSetTitle(${1:image},${2:titleString})
-# "description":"Set image title"
 
-snippet ImageMDSetWavelengthsAndWeights
+snippet ImageMDSetWavelengthsAndWeights Set wavelength and weight of one color on a 2D array
 
 	ImageMDSetWavelengthsAndWeights(${1:image},${2:wvlAndWtArray},${3:colorStr},${4:numWavelengths})
-# "description":"Set wavelength and weight of one color on a 2D array"
 
-snippet ImageMultiplyByConstant
+snippet ImageMultiplyByConstant Multiply constant value on the image, overwrite the original image
 
 	ImageMultiplyByConstant(${1:image},${2:constVal})
-# "description":"Multiply constant value on the image, overwrite the original image"
 
 snippet ImagePutPixelAt
 
 	ImagePutPixelAt(${1:image},${2:row},${3:column},${4:component},${5:value})
-# "description":"Put the value on the pixel of the image"
+Put the value on the pixel of the image
 
-snippet ImageRead
+snippet ImageRead Read image file
 
 	ImageRead(${1:filename},${2:image})
-# "description":"Read image file"
 
-snippet ImageRestoreFrom
+snippet ImageRestoreFrom Read image file and contain as IMG variable
 
 	ImageRestoreFrom(${1:myfile},${2:image})
-# "description":"Read image file and contain as IMG variable"
 
-snippet ImageRotate
+snippet ImageRotate Rotate image and output as new image
 
 	ImageRotate(${1:startingImage},${2:outputImage},${3:rotationAngleDegrees})
-# "description":"Rotate image and output as new image"
 
-snippet ImageSaveAs
+snippet ImageSaveAs Save image as specified filetype
 
 	ImageSaveAs(${1:image},${2:filename},${3:filetype})
-# "description":"Save image as specified filetype"
 
-snippet ImageSubtract
+snippet ImageSubtract Perform outputImage = imageA - imageB
 
 	ImageSubtract(${1:imageA},${2:imageB},${3:outputImage})
-# "description":"Perform outputImage = imageA - imageB"
 
-snippet ImageToArray
+snippet ImageToArray Load image data and move to 2D array
 
 	ImageToArray(${1:monochromeImage},${2:outputArray})
-# "description":"Load image data and move to 2D array"
 
-snippet ImageWrite
+snippet ImageWrite Write image to 16bit or 48 bit PNG
 
 	ImageWrite(${1:filename},${2:image})
-# "description":"Write image to 16bit or 48 bit PNG"
 
-
-
-
-snippet ARR_TO_BUF
+snippet ARR_TO_BUF Copy array to buffer
 
 	ARR_TO_BUF(${1:array},${2:num_rows},${3:num_cols},${4:buf_num})
-# "description":"Copy array to buffer"
 
-snippet BUF_TO_ARR
+snippet BUF_TO_ARR Copy buffer to array
 
 	BUF_TO_ARR(${1:buf_num},${2:array},${3:start_row},${4:end_row},${5:start_col},${6:end_col})
-# "description":"Copy buffer to array"
 
-snippet FFTdDts
+snippet FFTdDts Perform FFT
 
 	FFTdDts(${1:cen_in},${2:cen_out},${3:fdata},${4:num_rows},${5:num_cols},${6:fwd})
-# "description":"Perform FFT"
 
-snippet GET_COMPLEX_MAGNITUDE
+snippet GET_COMPLEX_MAGNITUDE Creates an array of magnitudes from an array of complex numbers
 
 	GET_COMPLEX_MAGNITUDE(${1:comp},${2:mag},${3:num_mags})
-# "description":"Creates an array of magnitudes from an array of complex numbers"
 
-snippet GetDim1Num
+snippet GetDim1Num Get number of rows
 
 	GetDim1Num(${1:array})
-# "description":"Get number of rows"
 
-snippet GetDim2Num
+snippet GetDim2Num Get number of columns
 
 	GetDim2Num(${1:array2D})
-# "description":"Get number of columns"
 
-snippet GET_IMAGINARY_PART
+snippet GET_IMAGINARY_PART Get imaginary part of complex array
 
 	GET_IMAGINARY_PART(${1:comp},${2:imag},${3:num_imags})
-# "description":"Get imaginary part of complex array"
 
-snippet GET_REAL_PART
+snippet GET_REAL_PART Get real part of complex array
 
 	GET_REAL_PART(${1:comp},${2:real},${3:num_reals})
-# "description":"Get real part of complex array"
 
-snippet PAD_REAL_TO_COMPLEX
+snippet PAD_REAL_TO_COMPLEX Create complex array
 
 	PAD_REAL_TO_COMPLEX(${1:real},${2:comp},${3:num_reals})
-# "description":"Create complex array"
 
-snippet ReDimNum
+snippet ReDimNum Change array size
 
 	ReDimNum(${1:array2D},${2:newNumRows},${3:newNumColumns})
-# "description":"Change array size"
 
-snippet SCALE_REAL_ARRAY
+snippet SCALE_REAL_ARRAY Scale real array
 
 	SCALE_REAL_ARRAY(${1:real},${2:scale},${3:num_vals})
-# "description":"Scale real array"
 
-snippet STDEV
+snippet STDEV Compute standard deviation of the array
 
 	STDEV(${1:array},${2:num_vals})
-# "description":"Compute standard deviation of the array"
 
-snippet SVD
+snippet SVD Singular value decomposition
 
 	SVD(${1:A},${2:rows},${3:cols}.${4:U},${5:V},${6:S})
-# "description":"Singular value decomposition"
 
-snippet SUMF
+snippet SUMF Get sum value of all elements in the array
 
 	SUMF(${1:array},${2:num_vals})
-# "description":"Get sum value of all elements in the array"
 
-
-
-
-snippet CONCAT
+snippet CONCAT Concatenate strings
 
 	CONCAT(${1:string_expr1},${2:string_expr2})
-# "description":"Concatenate strings"
 
-snippet FIND_STR_ARR
+snippet FIND_STR_ARR Return the first position where the specified string is found
 
 	FIND_STR_ARR(${1:string},${2:string_array_name})
-# "description":"Return the first position where the specified string is found"
 
-snippet JOIN
+snippet JOIN Concatenates the strings in the array into a single string with the specified delimiter
 
 	JOIN(${1:string_array_name},${2:separator_string},${3:string_array_element},${4:num of strings})
-# "description":"Concatenates the strings in the array into a single string with the specified delimiter"
 
-snippet LENSTR
+snippet LENSTR Get length of the string
 
 	LENSTR(${1:string_expr})
-# "description":"Get length of the string"
 
-snippet LOCSTR
+snippet LOCSTR Get the starting position of sub-string in the whole string
 
 	LOCSTR(${1:string_expr},${2:sub_string_expr})
-# "description":"Get the starting position of sub-string in the whole string"
 
-snippet LOWCASE
+snippet LOWCASE Convert to lower cases
 
 	LOWCASE(${1:string_expr})
-# "description":"Convert to lower cases"
 
-snippet NUM_TO_STR
+snippet NUM_TO_STR Convert number to a string
 
 	NUM_TO_STR(${1:expr})
-# "description":"Convert number to a string"
 
-snippet RFSTR
+snippet RFSTR Convert a replacement field entry to a string
 
 	RFSTR(${1:expr})
-# "description":"Convert a replacement field entry to a string"
 
-snippet STR_TO_NUM
+snippet STR_TO_NUM Convert string to a number
 
 	STR_TO_NUM(${1:string_expr})
-# "description":"Convert string to a number"
 
-snippet SUBSTR
+snippet SUBSTR Extract sub string with start and length specified
 
 	SUBSTR(${1:string_expr},${2:beg_expr},${3:length_expr})
-# "description":"Extract sub string with start and length specified"
 
-snippet TRUNC
+snippet TRUNC Truncate blanks
 
 	TRUNC(${1:string_expr})
-# "description":"Truncate blanks"
 
-snippet UPCASE
+snippet UPCASE Convert to upper cases
 
 	UPCASE(${1:string_expr})
-# "description":"Convert to upper cases"
 
-
-
-snippet EOFILE
+snippet EOFILE Return true when EOF is detected
 
 	EOFILE
-# "description":"Return true when EOF is detected"
 
-
-
-snippet CVERROR
+snippet CVERROR Output user defined error message
 
 	CVERROR(${1:error_msg},${2:cont_line})
-# "description":"Output user defined error message"
 
-snippet CVWARNING
+snippet CVWARNING Output user defined warning message
 
 	CVWARNING(${1:warning_msg},${2:cont_line})
-# "description":"Output user defined warning message"
 
-snippet CVPUTREC
+snippet CVPUTREC Output information message within 256 characters
 
 	CVPUTREC(${1:string_expr})
-# "description":"Output information message within 256 characters"
 
-snippet THREADNUM
+snippet THREADNUM Return the thread number of the calling Macro-PLUS code
 
 	THREADNUM
-# "description":"Return the thread number of the calling Macro-PLUS code"
 
-snippet INPARALLEL
+snippet INPARALLEL Indicates whether the calling Macro-PLUS codeis in a parallel region or in a serial region
 
 	INPARALLEL
-# "description":"Indicates whether the calling Macro-PLUS codeis in a parallel region or in a serial region"
 
-
-
-snippet ISFCT
+snippet ISFCT Return true if specified UDF exists
 
 	ISFCT(${1:string_expr})
-# "description":"Return true if specified UDF exists"
 
-snippet ISLCL
+snippet ISLCL Return true if specified local variable exists
 
 	ISLCL(${1:string_expr})
-# "description":"Return true if specified local variable exists"
 
-snippet ISGBL
+snippet ISGBL Return true if specified global variable exists
 
 	ISGBL(${1:string_expr})
-# "description":"Return true if specified global variable exists"
 
